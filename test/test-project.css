@@ -1,0 +1,408 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* .container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(https://dinhphong2.vn/assets/frontend/teaser/assets/images/frame-6/background.jpg);
+} */
+
+/* .frame-title */
+/* .container .frame-title {
+    background: url(https://dinhphong2.vn/assets/frontend/teaser/assets/images/frame-2/title.png);
+    background-size: 100% auto;
+    z-index: 333;
+    width: 35%;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container .frame-title span{
+    background: linear-gradient(to right, #FFFFEA 0%, #fceaac 38%);
+    font-size: 1vw;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}  */
+
+/* .slide */
+/* .container .slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  height: 58vh;
+  position: relative;
+}
+.container .slide .khung-slide {
+  width: 44.15vw;
+  height: auto;
+  position: absolute;
+  object-fit: cover;
+}
+.container .slide .khung-slide img {
+  width: 100%;
+  height: 100%;
+}
+.container .slide .slide-show {
+  width: 71%;
+  height: auto;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.container .slide .slide-show .list-images {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: transform 2s;
+}
+.container .slide .slide-show .list-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container .slide .btns {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.container .slide .btns .btn-right {
+  position: absolute;
+  right: 0;
+}
+
+.container .slide .btns .btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  transition: filter 0.3s, transform 0.5s;
+  cursor: pointer;
+}
+.container .slide .btns .btn:hover {
+  filter: brightness(200%);
+  transform: scale(1.2);
+}
+
+.container .slide .index-images {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  background-color: transparent;
+  border: none;
+  justify-content: space-evenly;
+  padding: 0px 34%;
+  gap: 1.5;
+}
+.container .slide .index-images .index-item {
+  background: #faf2ae;
+  transform: rotate(45deg);
+  transition: transform 0.6s;
+  width: 1.5vw;
+  height: 1.5vw;
+  border: none;
+  outline: none; /* Loại bỏ viền */
+/* filter: brightness(0.3);
+}
+.container .slide .index-images .active {
+  transform: scale(1.5) rotate(45deg);
+  filter: brightness(2);
+  transition: transform 0.6s;
+}
+
+.container .slide .index-images .index-item:hover {
+  filter: brightness(1);
+  transform: scale(1.04), translateY(-50%);
+  cursor: pointer;
+} */
+
+/* .frame-video */
+.container .frame-video{
+    margin-top: 35px;
+    background:black ;    
+    width: 50%;
+    height: 8.5vw;
+    display: flex;
+    
+}
+.container .frame-video .video-slider img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .frame-mouse{
+    margin-top: 12px;
+}
+
+.container .frame-mouse img{
+    width: auto;
+    height: 2.5vw;
+    transition: transform 0.6s;
+}
+.container .frame-mouse img:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+    filter: brightness(2);
+} */
+
+.container {
+  background: url(https://dinhphong2.vn/assets/frontend/teaser/assets/images/frame-5/background.jpg);
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  position: relative;
+}
+
+.container .frame-title {
+  width: 45%;
+  height: 5vw;
+  position: absolute;
+  top: 3%;
+  left: 25%;
+  background: url(https://dinhphong2.vn/assets/frontend/teaser/assets/images/frame-2/title.png);
+  background-size: 100% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+
+  font-size: 2vw;
+}
+
+.container .frame-title span {
+  background: linear-gradient(to right, #ffffea 0%, #fceaac 38%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container .country-slide {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  gap: 1vw;
+  top: 16%;
+  left: 21%;
+  transition: 0.3s;
+}
+
+.container .country-slide .country-item {
+  width: 11vw;
+  height: 4vw;
+  background: url(https://dinhphong2.vn/assets/frontend/teaser/assets/images/frame-5/ngo.png);
+  background-size: 100% auto;
+  transition: transform 0.5s;
+}
+
+.container .country-slide .country-item:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+} */
+
+.container .country-slide .country-item.active {
+  background: url(https://dinhphong2.vn/assets/frontend/teaser/assets/images/frame-5/ngo-active.png);
+  background-size: 100% auto;
+  transition:transform 0.5s, background 0.5s;
+} 
+
+.container .chap-slide-country-0{
+  position: absolute;
+  left: 23%;
+  bottom: 8vw;
+  display: inline-block;
+  perspective: 500px; 
+  perspective-origin: 50% 50%; 
+} 
+.container .champ-slide {
+  transform-style: preserve-3d;
+}
+
+.container .champ-slide li {
+  width: 100px; 
+  height: 100px; 
+  position: relative;
+  display: inline-block;
+  transform: rotateY(45deg); 
+  margin: 10px; 
+} 
+
+/* Phần tử thứ 4 và 5 sẽ di chuyển xuống dưới để tạo thành hai hàng */
+
+/* Phần tử thứ 6 sẽ di chuyển qua phải một chút để trở thành phần tử cuối cùng trong hàng */
+.container .champ-slide li:nth-child(6) {
+  transform: rotateY(45deg) translateX(130px) translateY(50px);
+} 
+
+
+/*
+.sidebar {
+  position: fixed;
+  top: 0%;
+  bottom: 0;
+  margin: auto;
+  height: 50vw;
+  width: 8%;
+  z-index: 888;
+  background: url(https://dinhphong2.vn/assets/frontend/teaser/assets/images/sidebar/background.png)
+    no-repeat right center;
+  background-size: 100% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #dfc384;
+}
+
+.sidebar .toggle-nav {
+  position: absolute;
+  height: 7vh;
+  width: 34%;
+  left: -38%;
+  top: 50%;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: url(https://dinhphong2.vn/assets/frontend/teaser/assets/images/sidebar/btn-hide.png)
+    no-repeat center center;
+  background-size: 100% auto;
+}
+
+.sidebar .toggle-nav:hover{
+  transform: scale(1.3);
+}
+
+.sidebar .qr-link {
+  position: absolute;
+  width: 46%;
+  top: 33.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  white-space: nowrap;
+  font-size: 0.8vw;
+  gap: 0.5vw;
+}
+
+.sidebar .qr-link img {
+  width: auto;
+  height: 9vh;
+}
+
+.sidebar .text-download {
+  color: #fff;
+  font-size: 0.8vw;
+  position: absolute;
+  top: 50%;
+}
+.sidebar a {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #dfc384;
+  gap: 0.2vh;
+  text-decoration: none;
+}
+.sidebar a:hover{
+  transform: scale(1.3);
+}
+.sidebar .download-link {
+  top: 0;
+  left: 11%;
+}
+.sidebar .link-chplay {
+  top: 53.5%;
+}
+.sidebar .download-link img {
+  height: 4vh;
+}
+.sidebar a p {
+  font-size: 1.5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1.1;
+}
+
+.sidebar .link-appstore {
+  top: 59%;
+}
+
+.sidebar .link-fanpage {
+  top: 67%;
+}
+.sidebar .link-telegram {
+  top: 72.5%;
+}
+.sidebar .credit-link {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #fff;
+  font-family: "mb";
+  top: 79%;
+}
+
+*/
